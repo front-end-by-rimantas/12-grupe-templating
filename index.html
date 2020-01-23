@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        HEADER
+    </header>
+
+    <div id="achievements" data-templating>
+        <div class="block">
+            <i class="fa fa-{{icon}}"></i>
+            <span>{{number}}</span>
+            <h4>{{title}}</h4>
+        </div>
+    </div>
+
+    <div id="skills" data-templating>
+        <div class="progress-bar animate">
+            <div class="texts">
+                <div class="title">{{title}}</div>
+                <div class="value">{{value}}%</div>
+            </div>
+            <div class="bar">
+                <div class="value" style="width: {{value}}%;">
+                    <div class="loading"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        FOOTER
+    </footer>
+    
+    <script src="./js/data.js"></script>
+    <script src="./js/templating.js"></script>
+    <script src="./js/actions.js"></script>
+</body>
+</html>
